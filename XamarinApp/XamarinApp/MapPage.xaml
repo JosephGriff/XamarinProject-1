@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinApp.MapPage">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="Gray" Orientation="Vertical" VerticalOptions="Fill">
+
+            <Label HorizontalOptions="Center" Text="Map/Location Data" TextColor="White" Font="Bold, Italic" />
+
+            <StackLayout Margin="5">
+                <Label Text="Latitude: " TextColor="White" Font="Bold" />
+                <Entry x:Name="latText" Placeholder="Enter Latitude" />
+                <Label x:Name="latError" />
+            </StackLayout>
+
+            <StackLayout Margin="5">
+                <Label Text="Longitude: " TextColor="White" Font="Bold" />
+                <Entry x:Name="lngText" Placeholder="Enter Longitude" />
+                <Label x:Name="lngError" />
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Margin="5">
+                <Button x:Name="getLocation" Text="Get My Location" BackgroundColor="Green" TextColor="White" Font="Italic" Clicked="GetLocation_Clicked" />
+                <Button x:Name="openLocation" Text="Open Map Location" BackgroundColor="Blue" TextColor="White" Font="Italic" Clicked="OpenLocation_Clicked" />
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

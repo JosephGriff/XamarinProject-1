@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinApp.AddContactsPage">
+    <ContentPage.Content>
+
+        <StackLayout BackgroundColor="LightGray" VerticalOptions="Fill">
+
+            <StackLayout Spacing="10" Margin="0,10,0,0">
+                <Label Font="Bold, Italic" Text="Contact Name:" />
+                <Entry x:Name="nameField" TextChanged="NameField_TextChanged" Placeholder="Enter Contact Name" Text="{Binding name}" />
+                <Label x:Name="nameError" />
+            </StackLayout>
+
+            <StackLayout Spacing="10">
+                <Label Font="Bold, Italic" Text="Contact Phone Number:" />
+                <Entry x:Name="phoneNumberField" Keyboard="Numeric" TextChanged="NameField_TextChanged" Placeholder="Enter Contact Phone Number" Text="{Binding phoneNumber}" />
+                <Label x:Name="phoneNumberError" />
+            </StackLayout>
+
+            <StackLayout Spacing="10">
+                <Label Font="Bold, Italic" Text="Contact Email:" />
+                <Entry x:Name="emailField" Keyboard="Email" TextChanged="NameField_TextChanged" Placeholder="Enter Contact Email" Text="{Binding email}" />
+                <Label x:Name="emailError" />
+            </StackLayout>
+
+            <StackLayout Spacing="10">
+                <Label Font="Bold, Italic" Text="Contact Address:" />
+                <Entry x:Name="addressField" TextChanged="NameField_TextChanged" Placeholder="Enter Contact Address" Text="{Binding address}" />
+                <Label x:Name="addressError" />
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Button x:Name="saveButton" BorderColor="Black" BorderRadius="10" BackgroundColor="Blue" Font="Italic" TextColor="White" Text="Save Contact" Clicked="saveContactClicked"/>
+                <Button BorderColor="Black" BorderRadius="10" BackgroundColor="Red" TextColor="White" Font="Italic" Text="Cancel" Clicked="cancelClicked"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Button BorderColor="Black" x:Name="deleteButton" BorderRadius="10" BackgroundColor="Red" Font="Italic" TextColor="White" Text="Delete Contact" Clicked="deleteContactClicked"/>
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

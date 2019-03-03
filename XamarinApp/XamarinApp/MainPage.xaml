@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:XamarinApp"
+             x:Class="XamarinApp.MainPage">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Map Page" Order="Primary" Clicked="ToolbarItem_Clicked" />
+        <ToolbarItem Text="My Notes" Order="Secondary" Clicked="NotesListPage_Clicked" />
+        <ToolbarItem Text="My Contacts" Order="Secondary" Clicked="ContactsListPage_Clicked" />
+    </ContentPage.ToolbarItems>
+
+    <StackLayout Spacing="20" BackgroundColor="Gray" VerticalOptions="Fill">
+
+        <StackLayout Margin="10" BackgroundColor="White" HeightRequest="100" VerticalOptions="StartAndExpand">
+            <Label Font="Bold, Italic" Text="Go straight to my Map" />
+            <Label Text="Map image goes here" />
+            <Button BackgroundColor="Blue" Font="Bold" TextColor="White" Text="Go to Map" />
+        </StackLayout>
+
+        <StackLayout Margin="10" BackgroundColor="White" HeightRequest="100" VerticalOptions="StartAndExpand">
+            <Label Font="Bold, Italic" Text="Go straight to my Notes" />
+            <Label Text="Notes image goes here" />
+            <Button BackgroundColor="Blue" Font="Bold" TextColor="White" Text="Go to Notes" />
+        </StackLayout>
+
+        <StackLayout Margin="10" BackgroundColor="White" HeightRequest="100" VerticalOptions="StartAndExpand">
+            <Label Font="Bold, Italic" Text="Go straight to my Contacts" />
+            <Label Text="Contacts image goes here" />
+            <Button BackgroundColor="Blue" Font="Bold" TextColor="White" Text="Go to Contacts" />
+        </StackLayout>
+
+
+    </StackLayout>
+</ContentPage>
