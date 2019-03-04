@@ -16,7 +16,20 @@ namespace XamarinApp
 		public MapPage ()
 		{
 			InitializeComponent ();
-		}
+
+            switch (Device.RuntimePlatform)
+            {
+                case Device.iOS:
+                case Device.Android:
+                    mapImage.Source = (ImageSource)ImageSource.FromFile("map.png");
+                    break;
+                case Device.UWP:
+                    mapImage.Source = (ImageSource)ImageSource.FromFile("Images/map.png");
+                    break;
+                default:
+                    break;
+            }
+        }
 
         private async void OpenLocation_Clicked(object sender, EventArgs e)
         {

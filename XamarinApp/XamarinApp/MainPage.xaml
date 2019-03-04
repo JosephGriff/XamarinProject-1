@@ -5,19 +5,41 @@
              x:Class="XamarinApp.MainPage">
 
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Map Page" Order="Primary" Clicked="ToolbarItem_Clicked" />
+        <ToolbarItem Text="Map" Order="Primary" Clicked="ToolbarItem_Clicked" />
         <ToolbarItem Text="My Notes" Order="Secondary" Clicked="NotesListPage_Clicked" />
         <ToolbarItem Text="My Contacts" Order="Secondary" Clicked="ContactsListPage_Clicked" />
     </ContentPage.ToolbarItems>
 
-    <StackLayout Spacing="20" BackgroundColor="Gray" VerticalOptions="Fill">
+    <ContentPage.Content>
 
-        <StackLayout Margin="10" BackgroundColor="White" HeightRequest="100" VerticalOptions="StartAndExpand">
-            <Label Font="Bold, Italic" Text="Go straight to my Map" />
-            <Label Text="Map image goes here" />
-            <Button BackgroundColor="Blue" Font="Bold" TextColor="White" Text="Go to Map" />
+        <StackLayout Spacing="10" BackgroundColor="Gray" VerticalOptions="Fill">
+
+        <StackLayout Margin="20" BackgroundColor="LightGray" HeightRequest="100" VerticalOptions="FillAndExpand">
+
+                <Grid>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <StackLayout Grid.Row="0" Grid.Column="0" VerticalOptions="StartAndExpand">
+                        <Label Font="Bold, Italic" Text="Go straight to my Map" />
+                        <Label Font="Italic" Text="Quick Link To Map/Location Service" />
+                        <Button Margin="10,20,50,0" BackgroundColor="Blue" Font="Bold" TextColor="White" Text="Go to Map" />
+                    </StackLayout>
+
+                    <Image Margin="50,0,0,0" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" HeightRequest="150" WidthRequest="150" x:Name="mapImage"></Image>
+                </Grid>
+
         </StackLayout>
 
+                
         <StackLayout Margin="10" BackgroundColor="White" HeightRequest="100" VerticalOptions="StartAndExpand">
             <Label Font="Bold, Italic" Text="Go straight to my Notes" />
             <Label Text="Notes image goes here" />
@@ -31,5 +53,9 @@
         </StackLayout>
 
 
-    </StackLayout>
+
+        </StackLayout>
+
+    </ContentPage.Content>
+
 </ContentPage>

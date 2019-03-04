@@ -19,7 +19,7 @@
 
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <ViewCell Height="100">
+                    <ViewCell Height="150">
 
                         <StackLayout BackgroundColor="LightGray" Spacing="5" Margin="0,0,0,5" VerticalOptions="StartAndExpand">
 

@@ -12,6 +12,19 @@ namespace XamarinApp
         public MainPage()
         {
             InitializeComponent();
+
+            switch (Device.RuntimePlatform)
+            {
+                case Device.iOS:
+                case Device.Android:
+                    mapImage.Source = (ImageSource)ImageSource.FromFile("map.png");
+                    break;
+                case Device.UWP:
+                    mapImage.Source = (ImageSource)ImageSource.FromFile("Images/map.png");
+                    break;
+                default:
+                    break;
+            }
         }
 
         private void NotesListPage_Clicked(object sender, EventArgs e)
