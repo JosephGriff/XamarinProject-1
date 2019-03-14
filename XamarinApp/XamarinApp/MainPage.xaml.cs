@@ -18,9 +18,13 @@ namespace XamarinApp
                 case Device.iOS:
                 case Device.Android:
                     mapImage.Source = (ImageSource)ImageSource.FromFile("map.png");
+                    notesImage.Source = (ImageSource)ImageSource.FromFile("note.png");
+                    contactImage.Source = (ImageSource)ImageSource.FromFile("contact.png");
                     break;
                 case Device.UWP:
                     mapImage.Source = (ImageSource)ImageSource.FromFile("Images/map.png");
+                    notesImage.Source = (ImageSource)ImageSource.FromFile("Images/note.png");
+                    contactImage.Source = (ImageSource)ImageSource.FromFile("Images/contact.png");
                     break;
                 default:
                     break;
@@ -40,6 +44,21 @@ namespace XamarinApp
         private void ToolbarItem_Clicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new MapPage());
+        }
+
+        private void MapPage_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new MapPage());
+        }
+
+        private void AddNote_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new AddNotesPage());
+        }
+
+        private void AddContact_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new AddContactsPage());
         }
     }
 }
