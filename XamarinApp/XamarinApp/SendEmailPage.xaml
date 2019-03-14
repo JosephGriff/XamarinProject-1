@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinApp.SendEmailPage">
+    <ContentPage.Content>
+
+        <StackLayout BackgroundColor="LightGray" VerticalOptions="Fill">
+
+            <StackLayout Margin="10">
+                <Label Font="Bold, Italic" Text="Email Address:" />
+                <Entry x:Name="emailAddress" TextChanged="EmailAddress_TextChanged" Placeholder="Enter email: contact@domain.com" />
+                <Label x:Name="emailError" />
+            </StackLayout>
+
+            <StackLayout Margin="10">
+                <Label Font="Bold, Italic" Text="Email Subject:" />
+                <Entry x:Name="emailSubject" TextChanged="EmailSubject_TextChanged" Placeholder="Enter Subject..." />
+                <Label x:Name="subjectError" />
+            </StackLayout>
+
+            <StackLayout Margin="10">
+                <Label Font="Bold, Italic" Text="Email Body:" />
+                <Entry x:Name="emailBody" TextChanged="EmailBody_TextChanged" Placeholder="Enter Email Body..." HeightRequest="150" />
+                <Label x:Name="bodyError" />
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Button x:Name="sendEmail" BorderColor="Black" BorderRadius="10" BackgroundColor="Blue" Font="Italic" TextColor="White" Text="Send Email" Clicked="SendEmail_Clicked" />
+                <Button x:Name="cancelButton" BorderColor="Black" BorderRadius="10" BackgroundColor="Red" TextColor="White" Font="Italic" Text="Cancel" Clicked="CancelButton_Clicked" />
+            </StackLayout>
+
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

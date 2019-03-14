@@ -13,6 +13,7 @@ namespace XamarinApp
         {
             InitializeComponent();
 
+            //set images
             switch (Device.RuntimePlatform)
             {
                 case Device.iOS:
@@ -31,6 +32,7 @@ namespace XamarinApp
             }
         }
 
+        //push page operations
         private void NotesListPage_Clicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new NotesListPage());
@@ -43,7 +45,7 @@ namespace XamarinApp
 
         private void ToolbarItem_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new MapPage());
+            Navigation.PushAsync(new SendEmailPage());
         }
 
         private void MapPage_Clicked(object sender, EventArgs e)

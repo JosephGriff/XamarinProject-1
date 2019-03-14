@@ -27,7 +27,7 @@
 
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Margin="5">
                 <Button x:Name="openLocation" Text="Open Map Location" BackgroundColor="Blue" TextColor="White" Font="Italic" Clicked="OpenLocation_Clicked" />
-                <Button Text="Cancel" BackgroundColor="Red" TextColor="White" Font="Italic" />
+                <Button x:Name="cancelClicked" Clicked="CancelClicked_Clicked" Text="Cancel" BackgroundColor="Red" TextColor="White" Font="Italic" />
             </StackLayout>
 
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Margin="5">

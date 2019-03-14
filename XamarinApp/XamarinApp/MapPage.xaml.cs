@@ -74,7 +74,6 @@ namespace XamarinApp
 
                 if (location != null)
                 {
-                    //Console.WriteLine($"Latitude: {location.Latitude}, Longitude: {location.Longitude}, Altitude: {location.Altitude}");
                     latText.Text = location.Latitude.ToString();
                     lngText.Text = location.Longitude.ToString();
                 }
@@ -85,6 +84,11 @@ namespace XamarinApp
                 Console.WriteLine(ex.ToString());
             }
 
+        }
+
+        private async void CancelClicked_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PopAsync();
         }
     }
 }

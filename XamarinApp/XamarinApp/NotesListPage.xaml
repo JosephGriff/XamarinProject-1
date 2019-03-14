@@ -19,23 +19,25 @@
 
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <ViewCell Height="150">
+                    <ViewCell>
 
-                        <StackLayout BackgroundColor="LightGray" Spacing="5" Margin="0,0,0,5" VerticalOptions="StartAndExpand">
+                        
+                            <StackLayout BackgroundColor="LightGray" Spacing="5" Margin="0,0,0,5" VerticalOptions="StartAndExpand">
 
 
-                            <StackLayout Margin="0, 10, 0, 10" Orientation="Horizontal">
-                                <Label Font="Bold" TextColor="Blue" Text="Note Title: " />
-                                <Label Font="Italic" TextColor="Black" Text="{Binding title}" />
+                                <StackLayout Margin="0, 10, 0, 10" Orientation="Horizontal">
+                                    <Label Font="Bold" TextColor="Blue" Text="Note Title: " />
+                                    <Label Font="Italic" TextColor="Black" Text="{Binding title}" />
+                                </StackLayout>
+
+                                <StackLayout Margin="0, 10, 0, 10" Orientation="Vertical">
+                                    <Label Font="Bold" TextColor="Blue" Text="Note Content: " />
+                                    <Label Font="Italic" TextColor="Black" Text="{Binding note}" />
+                                </StackLayout>
+
+
                             </StackLayout>
-
-                            <StackLayout Margin="0, 10, 0, 10" Orientation="Vertical">
-                                <Label Font="Bold" TextColor="Blue" Text="Note Content: " />
-                                <Label Font="Italic" TextColor="Black" Text="{Binding note}" />
-                            </StackLayout>
-
-
-                        </StackLayout>
+                        
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>

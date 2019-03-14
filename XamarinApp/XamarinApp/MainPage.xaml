@@ -5,7 +5,7 @@
              x:Class="XamarinApp.MainPage">
 
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Map" Order="Primary" Clicked="ToolbarItem_Clicked" />
+        <ToolbarItem Text="Send Email" Order="Primary" Clicked="ToolbarItem_Clicked" />
         <ToolbarItem Text="My Notes" Order="Secondary" Clicked="NotesListPage_Clicked" />
         <ToolbarItem Text="My Contacts" Order="Secondary" Clicked="ContactsListPage_Clicked" />
     </ContentPage.ToolbarItems>
