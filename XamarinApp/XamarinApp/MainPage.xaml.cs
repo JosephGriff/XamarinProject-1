@@ -55,12 +55,18 @@ namespace XamarinApp
 
         private void AddNote_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new AddNotesPage());
+            Navigation.PushAsync(new AddNotesPage()
+            {
+                BindingContext = new Note()
+            });
         }
 
         private void AddContact_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new AddContactsPage());
+            Navigation.PushAsync(new AddContactsPage()
+            {
+               BindingContext = new Contact()
+            });
         }
     }
 }
