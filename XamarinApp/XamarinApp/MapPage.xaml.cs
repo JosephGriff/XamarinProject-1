@@ -74,6 +74,7 @@ namespace XamarinApp
 
                 if (location != null)
                 {
+                    latError.Text = "";
                     latText.Text = location.Latitude.ToString();
                     lngText.Text = location.Longitude.ToString();
                 }
@@ -81,7 +82,9 @@ namespace XamarinApp
             catch (Exception ex)
             {
                 // Handle not supported on device exception
-                Console.WriteLine(ex.ToString());
+                //Console.WriteLine(ex.ToString());
+                latError.FontAttributes = FontAttributes.Bold;
+                latError.Text = "Try turning on your location";
             }
 
         }

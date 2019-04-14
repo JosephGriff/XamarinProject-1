@@ -31,7 +31,7 @@
                     <StackLayout Grid.Row="0" Grid.Column="0" VerticalOptions="StartAndExpand">
                         <Label Font="Bold, Italic" Text="Go straight to my Map" />
                         <Label Font="Italic" Text="Quick Link To Map/Location Service" />
-                        <Button x:Name="mapPage" Margin="10,20,50,0" BackgroundColor="Blue" Font="Bold" TextColor="White" Text="Go to Map" Clicked="MapPage_Clicked" />
+                        <Button x:Name="mapPage" Margin="10,20,50,0" BorderRadius="7" BackgroundColor="Blue" Font="Bold" TextColor="White" Text="Go to Map" Clicked="MapPage_Clicked" />
                     </StackLayout>
 
                     <Image Margin="50,0,0,0" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" HeightRequest="150" WidthRequest="150" x:Name="mapImage"></Image>
@@ -56,7 +56,7 @@
                     <StackLayout Grid.Row="0" Grid.Column="0" VerticalOptions="StartAndExpand">
                         <Label Font="Bold, Italic" Text="Go straight to my Notes" />
                         <Label Font="Italic" Text="Quick Link Add Note" />
-                        <Button x:Name="AddNote" Margin="10,20,50,0" BackgroundColor="Blue" Font="Bold" TextColor="White" Text="Add Note" Clicked="AddNote_Clicked" />
+                        <Button x:Name="AddNote" Margin="10,20,50,0" BorderRadius="7" BackgroundColor="Blue" Font="Bold" TextColor="White" Text="Add Note" Clicked="AddNote_Clicked" />
                     </StackLayout>
 
 
@@ -83,7 +83,7 @@
                     <StackLayout Grid.Row="0" Grid.Column="0" VerticalOptions="StartAndExpand">
                         <Label Font="Bold, Italic" Text="Go straight to my Contact" />
                         <Label Font="Italic" Text="Quick Link Add Contact" />
-                        <Button x:Name="AddContact" Margin="10,20,50,0" BackgroundColor="Blue" Font="Bold" TextColor="White" Text="Add Contact" Clicked="AddContact_Clicked" />
+                        <Button x:Name="AddContact" Margin="10,20,50,0" BorderRadius="7" BackgroundColor="Blue" Font="Bold" TextColor="White" Text="Add Contact" Clicked="AddContact_Clicked" />
                     </StackLayout>
 
                     <Image Margin="50,0,0,0" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" HeightRequest="150" WidthRequest="150" x:Name="contactImage"></Image>
