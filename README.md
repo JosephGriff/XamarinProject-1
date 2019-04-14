@@ -1,5 +1,11 @@
 # XamarinProject
 
+Note: This projects commits were previously started at this repository https://github.com/arronHealy/MobileAppsXamarinProject
+
+Reason for this new repository is project namespace was to long for Android application
+
+---------------------------------------------------------------------------------------------------
+
 Xamarin Application for UWP and Android Platforms.
 
 This project was part of a module of 3rd year Software Development Course in GMIT.
