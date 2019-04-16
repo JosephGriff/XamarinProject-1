@@ -64,11 +64,11 @@ Notes List Page lists users Notes from the SQLite database
 
 <br />
 
-Add Contacts Page allows user to add a Contact to an SQLite database also has error handling included
+Add Contacts Page allows user to add a Contact to an SQLite database also has error handling included.
 
 <br />
 
-![](xamarinImages/AddContactsPage.PNG)
+![](xamarinImages/AddContactPage.PNG)
 
 <br />
 
