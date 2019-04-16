@@ -20,6 +20,8 @@ This Application uses SQLite as a local Database to store users notes and contac
 
 The app makes use of the Xamarin Essentials package features to get a users location, open the map and also be able to send an email using devices native features.
 
+For more info check Wiki https://github.com/arronHealy/XamarinProject/wiki
+
 <hr />
 
 # Application Flow Demo
